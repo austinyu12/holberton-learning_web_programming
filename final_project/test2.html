@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Text Block Over Image</title>
+<style type="text/css">
+    .box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.4);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 60%; /* Set the width of the positioned div */
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+    	<img style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); top: 800px" src="https://images.pexels.com/photos/1390183/pexels-photo-1390183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        <div class="text">
+            <h1 style="font-size: 80px">Hitting Two Birds.</h1>
+      <h1 style="font-size: 80px">With One Stone.</h1>
+      <h2 style="font-size: 40px; color: lightgray">Buy Dehydrated Water</h2>
+      <h2 style="font-size: 50px; color: lightgray">Mission: Mitigating Flood and Drought Damage</h2>
+        </div>
+    </div>
+</body>
+</html>
